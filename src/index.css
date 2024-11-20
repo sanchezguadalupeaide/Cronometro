@@ -1,0 +1,100 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.time-secondary {
+  font-size: 1.5rem;
+  color: #b3b3b3;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+th {
+  color: #b3b3b3;
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px solid #333;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.start {
+  background-color: #6200ea;
+  color: #ffffff;
+}
+
+.stop {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+
+.reset {
+  background-color: #333;
+  color: #b3b3b3;
+}
+
+.lap {
+  background-color: #333;
+  color: #ffffff;
+}
+
+button:hover:not(:disabled) {
+  background-color: #444;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .time-secondary {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
